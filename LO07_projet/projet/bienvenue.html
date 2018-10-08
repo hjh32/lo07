@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bienvenue</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            function about(){
+                document.getElementById('about').style.visibility="visible";
+            }          
+        </script>
+    </head>
+    <body>
+    <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+	<div class="navbar-header">
+            <a class="navbar-brand" href="#">Projet_LO07</a>
+	</div>
+	<div>
+            <ul class="nav navbar-nav">
+                <li><a href="bienvenue.html">Home</a></li>
+                <li><a href="#" onclick="about()">About us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="inscrire.html" class='gris font17'>Inscrire</a></li>
+                <li><a href="user_login.html" class='gris font17'>Se connecter</a></li>
+            </ul>
+	</div>
+	</div>
+    </nav>
+    <div class="row">
+        <div class="col-md-8">
+            <img src="img/bienvenue.jpg" class="img-responsive" alt="Cinque Terre" width="800" height="236" >
+        </div>
+        <div class="col-md-4">
+            <p id="about" style="visibility: hidden">
+                <font size="10" face="arial">
+                Entreprise nounou
+                </font>                
+            </p>
+        </div>
+    </div>
+    
+    </div>  
+    </body>
+</html>

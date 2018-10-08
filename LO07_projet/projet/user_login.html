@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            function inscrire(){
+                window.navigate("inscrire.html"); 
+            }
+        </script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">                  
+                <h3>Bienvenue! Veuillez vous connecter</h3>
+            </div>
+        </div>
+        <hr style="height:10px;border:none;border-top:10px groove skyblue;" />
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <em></em>
+                </p>
+            </div>
+            <div class="col-md-8">            
+                <form class='form-horizontal' name="form1" method="post" action="user_login.php">
+                    <h3>Entrez votre nom d'utilisateur et mot de passe s'il vous plait</h3>
+                    <div class="form-group">
+                        <label for="username" class="col-sm-4 control-label">Nom d'utilisateur:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="username" name="username" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd" class="col-sm-4 control-label">Mot de passe:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="pwd" name='pwd' placeholder="******" />
+                        </div>
+                    </div>                  
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-default col-sm-offset-5 col-sm-2" name="submit" value="Se connecter" />
+                        <input type="reset" class="btn btn-default col-sm-offset-1 col-sm-2" name="reset" value="Reset" />
+                    </div>                                  
+                </form>
+                <a href="inscrire.html" class='gris font17'>Pas de compte? Cliquez ici pour inscrire</a> 
+            </div>
+        </div>
+    </div>                   
+    </body>
+</html>
